@@ -1,0 +1,7 @@
+{
+  "require": {
+    "lcobucci/jwt" : "v3.2",
+    "crada/php-apidoc": "@dev",
+    "phalcon/devtools": "dev-master"
+  }
+}
