@@ -1,18 +1,16 @@
 <?php
 require __DIR__ . '/vendor/autoload.php';
 
-require_once __DIR__ . '/app/controllers/ArtistController.php';
+require_once __DIR__ . '/app/controllers/ControllerBase.php';
 require_once __DIR__ . '/app/controllers/FriendsController.php';
+require_once __DIR__ . '/app/controllers/ArtistController.php';
 require_once __DIR__ . '/app/controllers/SponsorsController.php';
 require_once __DIR__ . '/app/controllers/MapItemsController.php';
 require_once __DIR__ . '/app/controllers/UserController.php';
-require_once  __DIR__ . '/app/controllers/StageController.php.php';
+require_once  __DIR__ . '/app/controllers/StageController.php';
 
 use Crada\Apidoc\Builder;
 use Crada\Apidoc\Exception;
-
-use Controllers\PostController;
-use Controllers\ControllerBaseAuth;
 
 $classes = array(
     'Controllers\ArtistController',
@@ -20,7 +18,7 @@ $classes = array(
     'Controllers\SponsorsController',
     'Controllers\MapItemsController',
     'Controllers\UserController',
-    'Controllers\StageController',
+    'Controllers\StageController'
 );
 
 $output_dir = __DIR__ . '/apidocs';

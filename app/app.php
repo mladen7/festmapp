@@ -58,8 +58,8 @@ $users->setPrefix('/user');
 
 // Artists routes
 
-$artists->get('/get-all', 'getAllCommunities');
-$artists->post('/get-by-id', 'getCommunityById');
+
+$artists->post('/get-artist/by-id', 'getArtistById');
 $artists->post('/delete', 'deleteCommunity');
 $artists->post('/edit', 'editCommunity');
 $artists->post('/filter', 'getCommunitiesWithManagerByFilter');
